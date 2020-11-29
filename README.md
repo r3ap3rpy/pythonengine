@@ -9,4 +9,4 @@ The idea is to make this tool pluggable so that you can develop your own extensi
 
 This is a birds eye view of the project.
 
-![overview](/Pics/birdseye.PNG)
+![overview](/Pics/birdseye.png)
