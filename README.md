@@ -10,3 +10,9 @@ The idea is to make this tool pluggable so that you can develop your own extensi
 This is a birds eye view of the project.
 
 ![overview](/Pics/birdseye.png)
+
+The following dependencies are in place:
+- Python3.7
+- ansible
+- Postgres database
+- At least 4 VM-s, not necessary have to run at once
