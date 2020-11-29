@@ -16,3 +16,6 @@ The following dependencies are in place:
 - ansible
 - Postgres database
 - At least 4 VM-s, not necessary have to run at once
+
+The following guides are available:
+- [Python from Source](./Guides/PythonBuild.md)
