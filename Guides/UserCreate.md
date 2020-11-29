@@ -9,7 +9,7 @@ On CentOS linux systems when you enter a root shell you should be able to add us
 
 ``` bash
 useradd pyengine
-passwd pyengine 
+passwd pyengine
 usermod -a -G pyengine wheel
 ```
 
@@ -30,3 +30,4 @@ pyengine        ALL=(ALL)       NOPASSWD: ALL
 On linux systems you will use either the *invoke* module of python or the *ansible* to execute automation!
 
 On windows systems you use the same credentials and make sure the user is the member of the *Administratos* group. For windows only *ansible* will be used for authentication with *basic* auth.
+On Windows the password is *Start!12345*

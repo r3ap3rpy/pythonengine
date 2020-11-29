@@ -18,4 +18,6 @@ The following dependencies are in place:
 - At least 3 VM-s, not necessary have to run at once
 
 The following guides are available:
+- [Create Users](./Guides/UserCreate.md)
 - [Python from Source](./Guides/PythonBuild.md)
+- [Install Ansible](./Guides/Ansible.md)
