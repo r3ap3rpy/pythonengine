@@ -21,3 +21,4 @@ The following guides are available:
 - [Create Users](./Guides/UserCreate.md)
 - [Python from Source](./Guides/PythonBuild.md)
 - [Install Ansible](./Guides/Ansible.md)
+- [Install PostGres](./Guides/postgresinstall.md)
