@@ -36,8 +36,9 @@ systemctl restart postgresql-13
 Let's reset the postgres password!
 
 ``` bash
-sudo -i -u postgres
-psql -U postgres -c "alter user postgres with password 'postgres'"
+passwd postgres
+#enter postgres twice
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
 ```
 
 Now on the webui you have to follow the instructions.
@@ -122,7 +123,12 @@ The following scipt can be used to test out the functionality.
 
 ``` python
 import psycopg2
+#if you have windows
 conn = psycopg2.connect(dbname='pyengine',user='pyengine',password='pyengine!123',host='ansibler')
+#if you have linux
+con = psycopg2.connect(dbname='pyengine', host='localhost',user='pyengine',password='pyengine!123')
+cur = con.cursor()
 cur.execute("select * from users")
 cur.fetchall()
 ```
+con = psycopg2.connect(dbname='pyengine', host='localhost',user='pyengine',password='pyengine!123')
