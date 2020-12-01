@@ -115,3 +115,14 @@ TABLESPACE pg_default;
 ALTER TABLE public.requests
     OWNER to pyengine;
 ```
+
+ODBC driver for [postgres](https://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_13_00_0000-x64.zip) on windows systems.
+
+The following scipt can be used to test out the functionality.
+
+``` python
+import psycopg2
+conn = psycopg2.connect(dbname='pyengine',user='pyengine',password='pyengine!123',host='ansibler')
+cur.execute("select * from users")
+cur.fetchall()
+```
