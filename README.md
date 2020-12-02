@@ -22,3 +22,4 @@ The following guides are available:
 - [Python from Source](./Guides/PythonBuild.md)
 - [Install Ansible](./Guides/Ansible.md)
 - [Install PostGres](./Guides/postgresinstall.md)
+- [Invoke Tutorial](./Guides/InvokeTut.md)

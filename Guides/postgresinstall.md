@@ -121,6 +121,12 @@ ODBC driver for [postgres](https://ftp.postgresql.org/pub/odbc/versions/msi/psql
 
 The following scipt can be used to test out the functionality.
 
+``` bash
+python3.7 -m pip install psycopg2-binary
+```
+
+The following should be executable from shell.
+
 ``` python
 import psycopg2
 #if you have windows
