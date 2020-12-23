@@ -10,6 +10,10 @@ def localUpTime(c):
         os.system('uptime')
 
 @task
+def localSystemInfo(c):
+        os.system('systeminfo')
+
+@task
 def remoteDiskUsage(c, Machine = None):
         if Machine:
                 os.system(f"ansible-playbook remote.yaml -e FQDN={Machine} ")
