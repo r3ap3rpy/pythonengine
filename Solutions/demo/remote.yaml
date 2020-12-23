@@ -1,0 +1,10 @@
+---
+- hosts: "{{FQDN}}"
+  gather_facts: no
+  tasks:
+  - name: "Get disk usage on linux!"
+    command: df -h
+    register: disk
+  - name: "Show disk usage"
+    debug:
+      msg: "{{disk.stdout_lines}}"

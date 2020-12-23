@@ -1,0 +1,8 @@
+---
+- hosts: "{{FQDN}}"
+  gather_facts: no
+  tasks:
+  - name: "Create file in home folder: {{FileName}}"
+    file:
+      path: ~/{{FileName}}
+      state: touch
